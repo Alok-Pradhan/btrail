@@ -51,3 +51,23 @@
 	padding-top: 5px;
 	font-size: 16px;
 }
+
+.timer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    letter-spacing: -1px;
+  }
+  .timer span {
+    font-size: 2em;
+    margin: 0 3px 0 15px;
+  }
+
+  .clr{
+	  background-color: #00BF96;
+  }
+  .cls{
+	  background-color: #00816A;
+	  /* border:solid 3px #b4f5ac; */
+	  /* border-radius:1px; */
+  }
