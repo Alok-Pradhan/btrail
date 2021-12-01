@@ -22,30 +22,7 @@
     background-color:#fad8ef;
 }
 
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-    background-color:#00BF96;
-}
 
-#clockdiv > div{
-	padding: 13.6px;
-	border-radius: 3px;
-	background: #00BF96;
-	display: inline-block;
-    
-}
-
-#clockdiv div > span{
-	padding: 15px;
-	border-radius: 3px;
-	background: #00816A;
-	display: inline-block;
-}
 
 .smalltext{
 	padding-top: 5px;
@@ -70,4 +47,12 @@
 	  background-color: #00816A;
 	  /* border:solid 3px #b4f5ac; */
 	  /* border-radius:1px; */
+  }
+  #daterem{
+      font-size:5rem;
+  }
+  @media (max-width:400px) {
+    #daterem{
+        font-size:1rem;
+    }  
   }

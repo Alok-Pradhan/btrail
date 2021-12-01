@@ -46,5 +46,15 @@ ngOnInit() {
 ngOnDestroy() {
  this.subscription.unsubscribe();
 }
+
+playAudio(){
+  
+  let audio = new Audio();
+  // 
+  audio.src = "http://www.schillmania.com/projects/soundmanager2/demo/mpc/audio/CHINA_1.mp3";
+  audio.load();
+  audio.play();
+  
+}
  
 }

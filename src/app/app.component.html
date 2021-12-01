@@ -1,23 +1,53 @@
-<div class="container-fluid">
+<div class="">
   <!-- <section>
-    <div id="clockdiv" class="px-5">
-      <div>
-        <span class="days"></span>
-        <div class="smalltext">Days</div>
-      </div>
-      <div>
-        <span class="hours"></span>
-        <div class="smalltext">Hours</div>
-      </div>
-      <div>
-        <span class="minutes"></span>
-        <div class="smalltext">Min</div>
-      </div>
-      <div>
-        <span class="seconds"></span>
-        <div class="smalltext">Sec</div>
-      </div>
+    <div class="row justify-content-center">
+     <div class="col-md-4 mt-3">
+       <div class="bg-light">
+         <div class="text-center">
+           <p class="text-weight-normal">Countdown to</p>
+         </div>
+         <div class="text-center ">
+           <h5>NEW YORK</h5>
+         </div>
+         <div class="card shadow clr">
+           <div class="card-body">
+            <div class="d-flex mx-4">
+              <div>
+                <div class="rounded cls p-3 text-white">
+                 {{daysToDday}}
+                </div>
+                <small class="px-3 text-white font-weight-normal">Days</small>
+              </div>
+              <div>
+               <div class="rounded cls p-3 mx-2  text-white text-center ">
+                 {{hoursToDday}}
+               </div>
+               <small class="px-3 text-white">Hours</small>
+             </div>
+             <div>
+               <div class="rounded cls p-3 mr-2 text-white text-center">
+                 {{minutesToDday}}
+               </div>
+               <small class="px-3 text-white">Min</small>
+             </div>
+             <div>
+               <div class="rounded cls p-3  text-white text-center">
+                 {{secondsToDday}}
+               </div>
+               <small class="px-3 text-white">Sec</small>
+             </div>
+            </div>
+           </div>
+         </div>
+         <div class="d-flex">
+        
+            <button class="btn btn-primary btn-lg btn-block" (click)="playAudio()">Click</button>
+            <button class="btn btn-info btn-lg btn-block m-0">Click</button>
+         </div>
+       </div>
+     </div>
     </div>
+   
   </section>
   <section>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -64,7 +94,7 @@
     </div>
   </section>
   <section class="bg">
-    <div class="row justify-content-center py-5">
+    <div class="row justify-content-center py-5 " >
     <div class="col-md-4">
       <div class="mx-4">
         <h2>Lorem ipsum dolor sit amet consect</h2>
@@ -72,88 +102,59 @@
       </div>
     
     </div>
-    <div class="col-md-4">      
-       <div class="mx-5 mt-1">
-        <img  src="../assets/national.png" width="70%" height="270px" alt="">
+    <div class="col-md-4 bg-light">      
+       <div class="mx-3">
+        <img  src="../assets/ProfilePic.png" width="100%" height="270px" alt="">
        </div>     
     </div>
     </div>
-    </section>
-    <section class="bg-light">
+    </section> -->
+  <!-- <section class="bg-light" >
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <video width="320" height="240" controls>
+            <video  controls>
               <source src="movie.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
             </video>
-          </div>
-          <div class="col-md-5">
-           
-            
-          </div>
+          </div>         
         </div>
     </section> -->
-   <!-- <section>
-    <div class="timer">
-      <h4> Count down timer </h4>
-      <span id="days"> {{daysToDday}} </span>Day(s)
-      <span id="hours"> {{hoursToDday}} </span>Hrs 
-      <span id="minutes"> {{minutesToDday}} </span>Min
-      <span id="seconds"> {{secondsToDday}} </span>S
-  </div>
-   </section> -->
-   <section>
-     <div class="row justify-content-center">
-      <div class="col-md-4 my-3">
-        <div class="bg-light">
-          <div class="text-center">
-            <p class="text-weight-normal">Countdown to</p>
-          </div>
-          <div class="text-center ">
-            <h5>NEW YORK</h5>
-          </div>
-          <div class="card shadow clr">
-            <div class="card-body">
-             <div class="d-flex mx-4">
-               <div>
-                 <div class="rounded cls p-3 text-white">
-                  {{daysToDday}}
-                 </div>
-                 <small class="px-3 text-white">Days</small>
-               </div>
-               <div>
-                <div class="rounded cls p-3 mx-2  text-white text-center">
-                  {{hoursToDday}}
-                </div>
-                <small class="px-3 text-white">Hours</small>
-              </div>
-              <div>
-                <div class="rounded cls p-3 mr-2 text-white text-center">
-                  {{minutesToDday}}
-                </div>
-                <small class="px-3 text-white">Min</small>
-              </div>
-              <div>
-                <div class="rounded cls p-3  text-white text-center">
-                  {{secondsToDday}}
-                </div>
-                <small class="px-3 text-white">Sec</small>
-              </div>
-             </div>
+  <!-- <section>
+    <div class="card shadow clr">
+      <div class="card-body">
+        <div class="d-flex row justify-content-center">
+          <div>
+            <div class="rounded cls p-3 text-white" id="daterem">
+              {{daysToDday}}
             </div>
+            <small class="px-3 text-white font-weight-normal">Days</small>
           </div>
-          <div class="d-flex">
-         
-             <button class="btn btn-primary btn-lg btn-block">Click</button>
-             <button class="btn btn-info btn-lg btn-block m-0">Click</button>
+          <div>
+            <div class="rounded cls p-3 mx-2  text-white text-center " id="daterem">
+              {{hoursToDday}}
+            </div>
+            <small class="px-3 text-white">Hours</small>
+          </div>
+          <div>
+            <div class="rounded cls p-3 mr-2 text-white text-center" id="daterem">
+              {{minutesToDday}}
+            </div>
+            <small class="px-3 text-white">Min</small>
+          </div>
+          <div>
+            <div class="rounded cls p-3  text-white text-center" id="daterem">
+              {{secondsToDday}}
+            </div>
+            <small class="px-3 text-white">Sec</small>
           </div>
         </div>
       </div>
-     </div>
-    
-   </section>
-  </div>
+    </div>
+  </section> -->
+
+</div>
 
 
+<app-page01></app-page01>
 <router-outlet></router-outlet>
