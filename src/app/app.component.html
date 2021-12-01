@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <section>
+  <!-- <section>
     <div id="clockdiv" class="px-5">
       <div>
         <span class="days"></span>
@@ -93,8 +93,67 @@
             
           </div>
         </div>
-    </section>
-</div>
+    </section> -->
+   <!-- <section>
+    <div class="timer">
+      <h4> Count down timer </h4>
+      <span id="days"> {{daysToDday}} </span>Day(s)
+      <span id="hours"> {{hoursToDday}} </span>Hrs 
+      <span id="minutes"> {{minutesToDday}} </span>Min
+      <span id="seconds"> {{secondsToDday}} </span>S
+  </div>
+   </section> -->
+   <section>
+     <div class="row justify-content-center">
+      <div class="col-md-4 my-3">
+        <div class="bg-light">
+          <div class="text-center">
+            <p class="text-weight-normal">Countdown to</p>
+          </div>
+          <div class="text-center ">
+            <h5>NEW YORK</h5>
+          </div>
+          <div class="card shadow clr">
+            <div class="card-body">
+             <div class="d-flex mx-4">
+               <div>
+                 <div class="rounded cls p-3 text-white">
+                  {{daysToDday}}
+                 </div>
+                 <small class="px-3 text-white">Days</small>
+               </div>
+               <div>
+                <div class="rounded cls p-3 mx-2  text-white text-center">
+                  {{hoursToDday}}
+                </div>
+                <small class="px-3 text-white">Hours</small>
+              </div>
+              <div>
+                <div class="rounded cls p-3 mr-2 text-white text-center">
+                  {{minutesToDday}}
+                </div>
+                <small class="px-3 text-white">Min</small>
+              </div>
+              <div>
+                <div class="rounded cls p-3  text-white text-center">
+                  {{secondsToDday}}
+                </div>
+                <small class="px-3 text-white">Sec</small>
+              </div>
+             </div>
+            </div>
+          </div>
+          <div class="d-flex">
+         
+             <button class="btn btn-primary btn-lg btn-block">Click</button>
+             <button class="btn btn-info btn-lg btn-block m-0">Click</button>
+          </div>
+        </div>
+      </div>
+     </div>
+    
+   </section>
+  </div>
 
 
 <router-outlet></router-outlet>
