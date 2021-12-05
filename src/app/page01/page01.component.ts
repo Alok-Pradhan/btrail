@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 
 @Component({
@@ -45,6 +45,8 @@ ngOnInit() {
 ngOnDestroy() {
  this.subscription.unsubscribe();
 }
+@ViewChild('fileInput', { static: false }) el: ElementRef | undefined;
+imageUrl: any = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4Ui8-aKNWj9bB8P5rLObzIRt30lQ-wpIOg&usqp=CAU";
 
 playAudio(){
   
